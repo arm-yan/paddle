@@ -1,0 +1,30 @@
+{
+    "name": "armyan/omnipay-paddle",
+    "type": "library",
+    "description": "Paddle driver for the Omnipay Laravel Payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "paddle",
+        "purchase"
+    ],
+    "homepage": "https://github.com/armyan/omnipay-paddle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arman Karapetyan",
+            "email": "arm.karapetyan@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Paddle\\": "src/"
+        }
+    },
+    "require": {
+        "omnipay/common": "^3"
+    }
+}
