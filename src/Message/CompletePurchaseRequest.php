@@ -56,17 +56,7 @@ class CompletePurchaseRequest extends PurchaseRequest
         $this->validatePrecheckRequest($requestData);
 
         $data = $requestData->all();
-        $data['success'] = false;
-
-        // Check for required request data
-        if ($requestData->has('Reference') &&
-            $requestData->has('Amount') &&
-            $requestData->has('RequestTrace')) {
-
-
-            if($requestData->has('TransactionAccepted') && $requestData->get('TransactionAccepted') == "true")
-                $data['success'] = true;
-        }
+        $data['success'] = true;
 
         return $data;
     }
