@@ -15,7 +15,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "armyan/omnipay-paddle": "1.0.0"
+        "armyan/omnipay-paddle": "^1.0.0"
     }
 }
 ```
