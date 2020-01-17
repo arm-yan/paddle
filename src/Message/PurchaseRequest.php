@@ -59,12 +59,8 @@ class PurchaseRequest extends AbstractRequest
      */
     public function getData()
     {
-        $this->validate('product');
 
-        return  [
-            'product'      => $this->getProduct(),
-            'passthrough'  => $this->getPassThrough(),
-        ];
+        return  [];
     }
 
     /**
