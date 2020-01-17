@@ -15,7 +15,7 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
      * Gateway endpoint
      * @var string
      */
-    protected $endpoint = '';
+    protected $endpoint = '#';
 
     /**
      * Set successful to false, as transaction is not completed yet
@@ -23,7 +23,7 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
      */
     public function isSuccessful()
     {
-        return false;
+        return true;
     }
 
     /**

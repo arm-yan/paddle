@@ -4,8 +4,8 @@ namespace Omnipay\Paddle;
 
 use Omnipay\Common\Http\ClientInterface;
 use Omnipay\Common\AbstractGateway;
-use Omnipay\NetCash\Message\CompletePurchaseRequest;
-use Omnipay\NetCash\Message\PurchaseRequest;
+use Omnipay\Paddle\Message\CompletePurchaseRequest;
+use Omnipay\Paddle\Message\PurchaseRequest;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
 
 /**
@@ -98,7 +98,7 @@ class Gateway extends AbstractGateway
      */
     public function purchase(array $options = array())
     {
-        return ;
+        return $this->createRequest(PurchaseRequest::class, $options);
     }
 
     /**
@@ -109,7 +109,7 @@ class Gateway extends AbstractGateway
      */
     public function completePurchase(array $options = array())
     {
-        return ;
+        return $this->createRequest(CompletePurchaseRequest::class, $options);
     }
 
 }

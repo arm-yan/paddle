@@ -1,9 +1,8 @@
 # Omnipay: Paddle
 
 **Paddle driver for the Omnipay Laravel payment processing library**
-
 [![Latest Stable Version](https://poser.pugx.org/armyan/omnipay-paddle/v/stable)](https://packagist.org/packages/armyan/omnipay-paddle)
-[![Total Downloads](https://poser.pugx.org/armyan/omnipay-paddle/d/total.png)](https://packagist.org/packages/armyan/omnipay-paddle)
+[![Total Downloads](https://poser.pugx.org/armyan/omnipay-paddle/downloads)](https://packagist.org/packages/armyan/omnipay-paddle)
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.5+. This package implements Paddle support for Omnipay.
