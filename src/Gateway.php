@@ -95,6 +95,7 @@ class Gateway extends AbstractGateway
      *
      * @param array $options
      *
+     * @return mixed
      */
     public function purchase(array $options = array())
     {
@@ -106,6 +107,7 @@ class Gateway extends AbstractGateway
      *
      * @param array $options
      *
+     * @return mixed
      */
     public function completePurchase(array $options = array())
     {

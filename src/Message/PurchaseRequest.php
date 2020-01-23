@@ -33,6 +33,22 @@ class PurchaseRequest extends AbstractRequest
     }
 
     /**
+     * @param $value
+     *
+     * @return \Omnipay\Paddle\Message\PurchaseRequest
+     */
+    public function setRedirect($value) {
+        return $this->setParameter('redirect', !empty($value));
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRedirect() {
+        return $this->getParameter('redirect');
+    }
+
+    /**
      * Set the passthrough params
      *
      * @param string $value
@@ -60,7 +76,9 @@ class PurchaseRequest extends AbstractRequest
     public function getData()
     {
 
-        return  [];
+        return  [
+            'redirect' => $this->getRedirect()
+        ];
     }
 
     /**
